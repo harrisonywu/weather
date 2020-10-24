@@ -37,7 +37,6 @@
   },
   "husky": {
     "hooks": {
-      "pre-push": "git branch | grep \"*\" | egrep -v \"^* master$\""
     }
   }
 }
