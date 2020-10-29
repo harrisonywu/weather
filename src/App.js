@@ -9,18 +9,18 @@ import key from './api/api.js';
 function App() {
 
   let city = '';
-  console.log("city = ", city)
 
   function inputChange (e) {
     city = e.target.value;
   }
 
-  function getWeather (str) {
+  function getWeather () {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`)
     .then(response => response.json())
     .then(data => console.log('Success : ', data))
     .catch(error => console.log('Error : ', error))
   }
+  
   function handleEnter (e) {
     if (e.keyCode === 0) {
       getWeather(city)
