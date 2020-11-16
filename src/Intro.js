@@ -7,7 +7,7 @@ function Intro () {
 
   let city = '';
 
-  function inputChange (e) {
+  const inputChange = (e) => {
     city = e.target.value;
   }
 

@@ -1,12 +1,14 @@
 .background {
   min-height: 100vh;
   background-color: #d3f6f9;
+  /* light blue color */
   display: flex;
   justify-content: center;
 }
 
 .card {
   background-color: #edf6f9;
+  /* off white color */
   text-align: center;
   position: absolute;
   top: 20%;
