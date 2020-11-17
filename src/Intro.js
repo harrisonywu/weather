@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import key from './api/api.js';
 
 function Intro () {
 
-  let city = '';
+  const [city, setCity] = useState(0);
 
   const inputChange = (e) => {
-    city = e.target.value;
+    setCity(e.target.value)
   }
 
   function getWeather () {
